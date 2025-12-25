@@ -75,7 +75,7 @@ const HeroSection = () => {
           >
             <div className="relative aspect-square max-w-lg mx-auto lg:max-w-none">
               {/* Decorative Elements */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border"></div>
+              <div className="absolute inset-0  bg-gradient-to-br from-primary/5 to-accent/5 border border-border"></div>
 
               {/* Map Placeholder */}
               <div className="absolute inset-4 rounded-2xl bg-muted overflow-hidden">

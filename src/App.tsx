@@ -9,6 +9,7 @@ import Pricing from "./pages/Pricing";
 import Courier from "./pages/Courier";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import ChatWidget from "./components/chat/ChatWidget";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      {/* Floating chat widget rendered globally */}
+      <ChatWidget />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
@@ -25,7 +28,7 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/courier" element={<Courier />} />
           <Route path="/login" element={<Login />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
