@@ -31,14 +31,14 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <Package className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-primary">Yilakun</span>
-            </Link>
+            <div className=" h-8 w-32 flex items-center">
+              <Link to="/" className="flex items-center gap-2">
+                <img src="/logo.png" alt="Yilakun Logo" />
+              </Link>
+            </div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              Ethiopia's trusted delivery platform. Fast, reliable, and secure package delivery across the nation.
+              Ethiopia's trusted delivery platform. Fast, reliable, and secure
+              package delivery across the nation.
             </p>
             <div className="mt-6 space-y-3">
               <a

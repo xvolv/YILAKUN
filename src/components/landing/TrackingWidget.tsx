@@ -25,16 +25,16 @@ const TrackingWidget = () => {
           <p className="text-muted-foreground mb-6">
             Enter your tracking number to see real-time delivery status.
           </p>
-          
+
           <form onSubmit={handleSubmit} className="flex gap-3 max-w-md mx-auto">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
                 type="text"
-                placeholder="Enter tracking number (e.g., YLK-123456)"
+                placeholder="Enter tracking number (YLK-123456)"
                 value={trackingNumber}
                 onChange={(e) => setTrackingNumber(e.target.value)}
-                className="pl-10 h-12"
+                className="pl-10 h-12 outline-none"
               />
             </div>
             <Button type="submit" variant="highlight" size="lg">

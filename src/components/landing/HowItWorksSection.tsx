@@ -36,9 +36,7 @@ const HowItWorksSection = () => {
 
         <div className="relative">
           {/* Connection Line - Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-[16.67%] right-[16.67%] h-0.5 bg-border -translate-y-1/2">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-accent/50 to-highlight/50"></div>
-          </div>
+       
 
           <div className="grid gap-8 lg:grid-cols-3">
             {steps.map((step, index) => (
